@@ -1,1 +1,1 @@
-# Just a Toggle button
+# **Just** a **`toggle`** button
