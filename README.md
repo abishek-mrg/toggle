@@ -1,1 +1,1 @@
-# **Just** a **toggle** button
+# **Just** a `CSS` **toggle**

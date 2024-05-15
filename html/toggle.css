@@ -32,7 +32,6 @@
    transition: 0.7s;
 }
 
-/* checks that the label has a checkbox that is checked */
 .toggle-input[type='checkbox']:checked + .display .toggle-label {
    background: var(--toggle-dark-bg);
 }
@@ -54,6 +53,7 @@
    overflow: hidden;
    transition: 0.7s;
 }
+
 .toggle-input[type='checkbox']:checked + .display .toggle-label .circle {
    left: 100%;
    transform: translate(-113%, -50%);

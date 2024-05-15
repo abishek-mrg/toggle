@@ -31,7 +31,6 @@
    transition: 0.7s;
 }
 
-/* checks that the label has a checkbox that is checked */
 .toggle-input[type='checkbox']:checked + .display .toggle-label {
    background: var(--toggle-dark-bg);
 }
