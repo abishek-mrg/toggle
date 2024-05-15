@@ -1,11 +1,6 @@
 :root {
    --toggle-bg: linear-gradient(0deg, #6900ff 0%, #9951ff 100%);
-   --toggle-dark-bg: linear-gradient(
-      0deg,
-      #2b2f77 0%,
-      #141852 50%,
-      #070b34 100%
-   );
+   --toggle-dark-bg: linear-gradient(0deg, #2b2f77 0%, #141852 50%, #070b34 100%);
 
    --toggle-ball-bg: #ffff99;
    --toggle-ball-dark-bg: #87ceeb;

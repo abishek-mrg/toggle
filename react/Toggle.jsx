@@ -135,4 +135,5 @@ const Toggle = () => {
       </div>
    );
 };
+
 export default Toggle;
