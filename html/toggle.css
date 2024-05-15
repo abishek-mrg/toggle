@@ -1,0 +1,101 @@
+:root {
+   --toggle-bg: linear-gradient(0deg, #6900ff 0%, #9951ff 100%);
+   --toggle-dark-bg: linear-gradient(
+      0deg,
+      #2b2f77 0%,
+      #141852 50%,
+      #070b34 100%
+   );
+
+   --toggle-ball-bg: #ffff99;
+   --toggle-ball-dark-bg: #87ceeb;
+}
+
+.toggle-input {
+   display: none;
+}
+
+.display {
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: transparent;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.toggle-label {
+   width: 100px;
+   height: 50px;
+   border-radius: 999px;
+   background: #f3f3f3;
+   background: var(--toggle-bg);
+   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05) inset;
+   position: relative;
+   transition: 0.7s;
+}
+
+/* checks that the label has a checkbox that is checked */
+.toggle-input[type='checkbox']:checked + .display .toggle-label {
+   background: var(--toggle-dark-bg);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.circle {
+   width: 40px;
+   height: 40px;
+   border-radius: 99px;
+   background: var(--toggle-ball-bg);
+   position: absolute;
+   top: 50%;
+   left: 0%;
+   transform: translate(10%, -50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   transition: 0.7s;
+}
+.toggle-input[type='checkbox']:checked + .display .toggle-label .circle {
+   left: 100%;
+   transform: translate(-113%, -50%);
+   background: var(--toggle-ball-dark-bg);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.toggle-svg {
+   position: absolute;
+   transition: 0.7s;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.sun {
+   margin-top: 0%;
+   opacity: 1;
+   width: 20px;
+   transition: 0.7s;
+}
+.toggle-input[type='checkbox']:checked + .display .toggle-label .circle .sun {
+   margin-top: 150%;
+   opacity: 0;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.moon {
+   width: 30px;
+   margin-top: -150%;
+   opacity: 0;
+   transition: 0.7s;
+}
+
+.toggle-input[type='checkbox']:checked + .display .toggle-label .circle .moon {
+   margin-top: 0%;
+   opacity: 1;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
